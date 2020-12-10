@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUKALAPAK</title>
+    <link rel="icon" href="foto/LOG.png">
+    <style>
+        body {
+            background-image: url(foto/SATU.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        .panel {
+            box-shadow: 1px 1px 50px #000;
+            border-radius: 20px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: whitesmoke;
+            width: 26%;
+            height: 410px;
+            margin: auto;
+            margin-top: 40px;
+
+        }
+        
+        label {
+            color: #3D3D3D;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Source Sans Pro#3D3D3D;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            box-shadow: 3px 3px 10px #333;
+            background: rgba(3, 3, 3, .18);
+        }
+        
+        .form-group input {
+            border: 0px;
+            color: #3D3D3D;
+            opacity: 1;
+            margin: 7px;
+            font-size: 17px;
+            border-bottom: 2px solid #333;
+            background: #F7F7F7;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+            border-radius: 3px;
+        }
+        
+        .button button {
+            width: 290px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            color: white;
+            text-align: center;
+            padding: 2px 4px;
+            background: #3D3D3D;
+            border-radius: 15px;
+        }
+        
+        .button button:hover {
+            color: rgb(30, 226, 24);
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+  <script>  
+
+alert("SELAMAT DATANG DI SITUS BUKALAPAK");
+function Login(){
+var done=0;
+var username=document.login.username.value;
+username=username.toLowerCase();
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (username=="pweb" && password=="pweb") { alert("Selamat Login Anda Berhasil "); }
+else 
+if (done==0) { alert(" Login Anda Gagal!"); }
+}
+   
+function redirect(url){
+    location.href = url;
+} 
+  </script>
+    <div class="panel">
+        <br>
+       
+        <img src="foto/LOG.png" style=" width:190px ; display:block ; margin:auto ; margin-bottom:20px;">
+        <div>
+            <table rules="rows" align="center">
+                <tr>
+                    <td width=150px align="center"><a href="../Sign%20Up/Sign_up.html" style="text-decoration:none ;color:#3D3D3D"><b>Daftar</a></td>
+                    <td width=150px align="center" style="background-color: rgba(3,3,3,.1); color: #3D3D3D"><b>Masuk</b></td>
+                    <tr/>
+            </table>
+        </div>
+        <br>
+
+        <form name=login>
+            <div class="form-group" align="center">
+                
+                <label>Nama Pengguna</label><br>
+                <input type="type"  style="margin-bottom: 29px;"  class="form-control" placeholder="Username" required autofocus autocomplete="off" name="username"><br>
+                <label>kata Sandi</label><br>
+                <input  type="Password" class="form-control" placeholder="Password" required autocomplete="off" name="password"><br>
+
+                <br>
+                <label style="font-size: 12px"><u>Login untuk berbelanja produk lebih</u> </label>
+                <br><br>
+
+                <div class="button">
+                 <button type="button" onclick="Login()" style="font-family:Source Sans Pro;">MASUK</button>
+                </div>
+                 <div class="button"><br>
+                 <button type="button" onclick="redirect ('IncludeJS.html')" style="background-color: skyblue;">Mulai Membuka Lapak</button>
+                </div>
+            </div>
+        </form>
+    </div>           
+</body>
+</html>
